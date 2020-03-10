@@ -7,7 +7,7 @@ A disqus-php-api plugin for Hexo NexT theme.
 
 This plugin an integration of [disqus-php-api](https://github.com/fooleap/disqus-php-api), which is another Disqus proxy similar to [DisqusJS](https://github.com/SukkaW/DisqusJS), **with some additional features** such as commenting, liking, sending pictures rather than only viewing comments as what DisqusJS does.
 
-The plugin has been tested on Hexo NexT v7.7.2, and it relies on the imrpoved [`theme_inject`](https://github.com/theme-next/hexo-theme-next/pull/868) feature, so it may not work in other themes. However, any PRs of porting the plugin to other themes are welcomed.
+The plugin has been tested on Hexo NexT v7.7.2, and it relies on the improved [`theme_inject`](https://github.com/theme-next/hexo-theme-next/pull/868) feature, so it may not work with other themes. However, any PRs of porting the plugin to other themes are welcomed.
 
 ## Installation
 [![npm](https://img.shields.io/npm/dt/hexo-disqus-php-api)](https://www.npmjs.com/package/hexo-disqus-php-api)

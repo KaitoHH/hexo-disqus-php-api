@@ -1,0 +1,23 @@
+{
+  "name": "hexo-disqus-php-api",
+  "version": "1.1.0",
+  "description": "A disqus-php-api plugin for Hexo Next theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaitoHH/hexo-disqus-php-api.git"
+  },
+  "keywords": [
+    "Hexo",
+    "Next"
+  ],
+  "author": "KaitoHH",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/KaitoHH/hexo-disqus-php-api/issues"
+  },
+  "homepage": "https://github.com/KaitoHH/hexo-disqus-php-api#readme"
+}

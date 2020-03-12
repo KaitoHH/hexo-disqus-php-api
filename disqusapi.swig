@@ -1,9 +1,12 @@
 {%- if page.comments %}
-<link rel="stylesheet" href="{{ config.disqusapi.api }}/dist/iDisqus.min.css">
+{%- set disqusapi_css_uri = config.disqusapi.cdn.css or config.disqusapi.api + '/dist/iDisqus.min.css' %}
+<link rel="stylesheet" href="{{ disqusapi_css_uri }}">
+
+{%- set disqusapi_js_uri = config.disqusapi.cdn.js or config.disqusapi.api + '/dist/iDisqus.min.js' %}
 
 <script>
 NexT.utils.loadComments(document.querySelector('#disqusapi_thread'), () => {
-  NexT.utils.getScript('{{ config.disqusapi.api }}/dist/iDisqus.min.js', () => {
+  NexT.utils.getScript('{{ disqusapi_js_uri }}', () => {
     window.dsqapi = new iDisqus('disqusapi_thread', {
       forum         : '{{ config.disqusapi.forum }}',
       api           : '{{ config.disqusapi.api }}/api/',

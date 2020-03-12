@@ -7,8 +7,6 @@ A disqus-php-api plugin for Hexo NexT theme.
 
 This plugin an integration of [disqus-php-api](https://github.com/fooleap/disqus-php-api), which is another Disqus proxy similar to [DisqusJS](https://github.com/SukkaW/DisqusJS), **with some additional features** such as commenting, liking, sending pictures rather than only viewing comments as what DisqusJS does.
 
-The plugin has been tested on Hexo NexT v7.7.2, and it relies on the improved [`theme_inject`](https://github.com/theme-next/hexo-theme-next/pull/868) feature, so it may not work with other themes. However, any PRs of porting the plugin to other themes are welcomed.
-
 ## Installation
 [![npm](https://img.shields.io/npm/dt/hexo-disqus-php-api)](https://www.npmjs.com/package/hexo-disqus-php-api)
 ``` bash
@@ -26,11 +24,19 @@ disqusapi:
   timeout: 2000
   emojipreview: true
   relatedtype: Related
+  cdn:
+    css: https://cdn.jsdelivr.net/gh/KaitoHH-forked-repo/disqus-php-api@1.1.2/dist/iDisqus.min.css
+    js: https://cdn.jsdelivr.net/gh/KaitoHH-forked-repo/disqus-php-api@1.1.2/dist/iDisqus.min.js
 ```
 
-The meaning of these options are available at [disqus-php-api](https://github.com/fooleap/disqus-php-api), including how to deploy the PHP server, so simply refer to this repo.
+- `cdn` CDN of the required css and js files. Leave it blank if you want to directly load from server side.
+
+The meaning of the other options is available at [disqus-php-api](https://github.com/fooleap/disqus-php-api), including how to deploy the PHP server, so simply refer to this repo.
 
 ## Demo
 https://kaitohh.com/about/
 
 **Make sure turn off any VPN or proxy before visiting this website.** Otherwise, you can only see the original Disqus.
+
+## Compatibility
+The plugin has been tested on Hexo NexT v7.7.2, and it relies on the improved [`theme_inject`](https://github.com/theme-next/hexo-theme-next/pull/868) feature, so it may not work with other themes. However, any PRs of porting the plugin to other themes are welcomed.

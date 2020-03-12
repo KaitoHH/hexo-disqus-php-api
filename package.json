@@ -1,6 +1,6 @@
 {
   "name": "hexo-disqus-php-api",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A disqus-php-api plugin for Hexo NexT theme.",
   "main": "index.js",
   "scripts": {
